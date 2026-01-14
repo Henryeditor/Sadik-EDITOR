@@ -795,4 +795,13 @@
   box-shadow: 0 0 10px #f0d25d, 0 0 15px #000000, 0 0 10px #ffdf6d;
 }
 
+/* 📱 Mobile Optimization */
+@media (max-width: 600px) {
+    .glow-btn {
+        width: 90%;
+        max-width: 320px;
+        font-size: 0.95rem;
+        padding: 16px 0;
+    }
+}
 
