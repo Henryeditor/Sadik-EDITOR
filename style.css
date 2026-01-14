@@ -805,3 +805,57 @@
     }
 }
 
+
+
+/* Main container */
+.software-track {
+  display: flex;
+  flex-wrap: wrap;        /* Lines break automatically on small screens */
+  justify-content: left;
+  align-items: left;
+  gap: 20px;              /* Space between icons */
+  padding: 20px;
+}
+
+/* Each icon box */
+.software-item img {
+  width: 70px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect (optional) */
+.software-item img:hover {
+  transform: scale(1.1);
+}
+
+/* 🔹 Responsive behavior */
+@media (max-width: 768px) {
+  .software-item img {
+    width: 55px;
+  }
+}
+
+@media (max-width: 480px) {
+  .software-item img {
+    width: 45px;
+  }
+
+  .software-track {
+    gap: 12px;
+    padding: 10px;
+  }
+}
+
+.software-track {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 20px;
+  padding: 10px;
+}
+
+.software-item {
+  flex: 0 0 auto;
+}
+
